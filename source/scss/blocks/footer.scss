@@ -1,0 +1,236 @@
+.footer {
+  background-color: $blue4;
+
+  .work-with-us {
+    max-width: 1268px;
+    min-height: 390px;
+    background-color: $blue4;
+    .work-with-us-content {
+      position: relative;
+      display: flex;
+      padding: 0 195px 98px 212px;
+      width: 100%;
+      background-color: $blue2;
+      border-radius: 0 200px 0 0;
+      flex-direction: row;
+      @media screen and (max-width: $sm) {
+        padding: 60px 20px 98px 20px;
+        flex-direction: column;
+        gap: 37px;
+      }
+      .content-information {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        gap: 35px;
+        @media screen and (max-width: $sm) {
+          flex-direction: column;
+          gap: 10px;
+          text-align: start;
+        }
+
+        .title {
+          margin: 0;
+          padding-top: 87px;
+          max-width: 350px;
+          color: $white;
+          line-height: 46px;
+          letter-spacing: 0.7px;
+          @media screen and (max-width: $sm) {
+            line-height: 30px;
+            letter-spacing: 0.7px;
+            padding-top: 20px;
+            padding-right: 100px;
+          }
+        }
+        .description {
+          margin: 0;
+          max-width: 460px;
+          color: rgba(255, 255, 255, 0.6);
+          line-height: 26px;
+          letter-spacing: 0.8px;
+          @media screen and (max-width: $sm) {
+            line-height: 15px;
+            letter-spacing: 0.5px;
+            padding-right: 60px;
+          }
+        }
+      }
+    }
+    .btn-talk {
+      position: absolute;
+      top: 166px;
+      right: 194px;
+      width: 220px;
+      height: 56px;
+      background: $blue4;
+      border-radius: 10px;
+      .btn-text {
+        margin: 0;
+        padding: 10px 0;
+        text-align: center;
+        color: $white;
+        line-height: 26px;
+        letter-spacing: 0.64px;
+        @media screen and (max-width: $sm) {
+          padding: 0;
+        }
+      }
+      @media screen and (max-width: $sm) {
+        position: unset;
+        width: 140px;
+        height: 40px;
+      }
+    }
+  }
+
+  .bottom {
+    max-width: 1268px;
+    background-color: $blue2;
+    .line {
+      display: flex;
+      margin: 0;
+      max-width: 1073px;
+      background-color: $blue2;
+      opacity: 0.4;
+      stroke-width: 1px;
+      stroke: $white;
+      @media screen and (max-width: $sm) {
+        width: 78%;
+      }
+    }
+    .bottom-content {
+      display: flex;
+      flex-direction: row;
+      padding: 68px 0 30px 212px;
+      gap: 60px;
+      @media screen and (max-width: $sm) {
+        padding: 10px 20px 33px 20px;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        max-width: 281px;
+        gap: 5px;
+        .logo-container {
+          display: flex;
+          flex-direction: row;
+          gap: 15px;
+          .logo-title {
+            font-size: 28px;
+            font-family: $second-font;
+            font-weight: 600;
+            color: $white;
+            font-style: normal;
+            line-height: 46px;
+            letter-spacing: 0.56px;
+            @media screen and (max-width: $sm) {
+              margin: 0;
+              font-size: 22px;
+            }
+          }
+        }
+        .contact-info {
+          display: flex;
+          flex-direction: column;
+          gap: 22px;
+          @media screen and (max-width: $sm) {
+            gap: 5px;
+          }
+
+          .address,
+          .telephone,
+          .email {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+          }
+          h4 {
+            margin: 0;
+            color: $white;
+            line-height: 26px;
+            letter-spacing: 0.8px;
+          }
+          .tag {
+            width: 19px;
+            font-weight: 600;
+            @media screen and (max-width: $sm) {
+              width: auto;
+            }
+          }
+          .information {
+            width: 264px;
+            @media screen and (max-width: $sm) {
+              line-height: 15px;
+              letter-spacing: 0.5px;
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+      .about {
+        padding-left: 58px;
+        @media screen and (max-width: $sm) {
+          padding-left: 0;
+        }
+      }
+      .about,
+      .follow {
+        .title {
+          margin: 24px 0 34px 0;
+          font-size: 20px;
+          font-family: $second-font;
+          font-weight: 600;
+          color: $white;
+          font-style: normal;
+          line-height: 30px;
+          letter-spacing: 1px;
+          @media screen and (max-width: $sm) {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+          }
+        }
+        .list {
+          display: flex;
+          margin: 0;
+          flex-direction: column;
+          gap: 16px;
+          @media screen and (max-width: $sm) {
+            width: auto;
+            gap: 5px;
+          }
+          .item {
+            width: 180px;
+            .link {
+              font-size: 16px;
+              font-family: $second-font;
+              font-weight: 400;
+              color: $white;
+              font-style: normal;
+              line-height: 26px;
+              letter-spacing: 0.8px;
+              @media screen and (max-width: $sm) {
+                font-size: 12px;
+                letter-spacing: 0.5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .rights {
+    margin: 0;
+    padding: 32px 0 64px 212px;
+    max-width: 520px;
+    color: $white;
+    line-height: 26px;
+    letter-spacing: 0.8px;
+    @media screen and (max-width: $sm) {
+      padding: 0 20px;
+    }
+  }
+}

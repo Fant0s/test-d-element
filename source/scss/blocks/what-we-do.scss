@@ -1,0 +1,176 @@
+.what-we-do {
+  margin-top: 186px;
+  @media screen and (max-width: $sm) {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .title {
+    max-width: 400px;
+    color: $blue2;
+    line-height: 46px;
+    letter-spacing: 1.55px;
+    @media screen and (max-width: $sm) {
+      line-height: unset;
+      letter-spacing: 1px;
+      width: 80%;
+      margin-bottom: 60px;
+    }
+  }
+  .card-container {
+    position: relative;
+    height: 1195px;
+    margin-bottom: 4px;
+    @media screen and (max-width: $sm) {
+      height: auto;
+    }
+
+    .card-container__content {
+      width: 100%;
+      height: 100%;
+      @media screen and (max-width: $sm) {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      .card {
+        display: flex;
+        width: 380px;
+        height: 525px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 5px 20px 50px 0 rgba(16, 112, 177, 0.2);
+        flex-direction: column;
+        @media screen and (max-width: $sm) {
+          width: auto;
+          height: auto;
+        }
+        .card-img {
+          height: auto;
+        }
+        .card-title {
+          margin: 25px 0 0 0;
+          padding: 0 46px;
+          color: $blue1;
+          line-height: 31.9px;
+          letter-spacing: 1.9px;
+          @media screen and (max-width: $sm) {
+            padding: 0 30px;
+            line-height: 25px;
+            letter-spacing: 0.8px;
+          }
+        }
+
+        .card-info {
+          margin: 15px 0;
+          padding: 0 46px;
+          color: $blue1;
+          line-height: 26px;
+          letter-spacing: 0.7px;
+          @media screen and (max-width: $sm) {
+            padding: 0 30px;
+            line-height: 12px;
+            letter-spacing: 0.8px;
+          }
+        }
+
+        .btn-more {
+          display: flex;
+          flex-direction: row;
+          margin-top: 21px;
+          margin-bottom: 56px;
+          padding-left: 46px;
+          @media screen and (max-width: $sm) {
+            padding-left: 30px;
+            margin-bottom: 20px;
+          }
+          .btn-text {
+            margin: 0;
+            padding-right: 23px;
+            color: $blue4;
+            line-height: 23.7px;
+            letter-spacing: 0.25px;
+
+            &:hover {
+              font-size: 15px;
+              text-decoration: underline;
+              transition: all 0.2ms ease-in-out;
+            }
+          }
+          .btn-icon {
+            @media screen and (max-width: $sm) {
+              width: 23px;
+            }
+          }
+        }
+      }
+
+      .card--1 {
+        position: absolute;
+        bottom: 832px;
+        left: 563px;
+        @media screen and (max-width: $sm) {
+          position: unset;
+        }
+        .card-img--1 {
+          position: relative;
+          bottom: 23px;
+          left: 66px;
+          width: 255px;
+          @media screen and (max-width: $sm) {
+            left: 34px;
+          }
+        }
+        .card-title {
+          line-height: 30.9px;
+          @media screen and (max-width: $sm) {
+            line-height: 25px;
+          }
+        }
+      }
+      .card--2 {
+        position: absolute;
+        bottom: 536px;
+        left: 81px;
+        .card-img--2 {
+          position: relative;
+          bottom: -48px;
+          left: 66px;
+          width: 190px;
+          margin-bottom: 77px;
+          @media screen and (max-width: $sm) {
+            left: 42px;
+          }
+        }
+        @media screen and (max-width: $sm) {
+          position: unset;
+        }
+      }
+      .card--3 {
+        position: absolute;
+        bottom: 207px;
+        left: 563px;
+        .card-img--3 {
+          position: relative;
+          bottom: -49px;
+          left: 83px;
+          width: 171px;
+          margin-bottom: 79px;
+          @media screen and (max-width: $sm) {
+            left: 59px;
+          }
+        }
+        @media screen and (max-width: $sm) {
+          position: unset;
+        }
+        .card-title {
+          line-height: 30.1px;
+          letter-spacing: 1.72px;
+          @media screen and (max-width: $sm) {
+            line-height: 25px;
+            letter-spacing: 0.8px;
+          }
+        }
+      }
+    }
+  }
+}

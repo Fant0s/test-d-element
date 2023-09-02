@@ -1,0 +1,163 @@
+.modal-container {
+  position: fixed;
+  top: -200%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  .modal {
+    width: 540px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 10px 50px 0 rgba(16, 112, 177, 0.2);
+    @media screen and (max-width: $sm) {
+      margin: 30px;
+      width: auto;
+    }
+    .modal-content {
+      width: 100%;
+      height: 100%;
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 54px 56px 50px 56px;
+        flex-direction: row;
+        @media screen and (max-width: $sm) {
+          padding: 25px;
+          width: auto;
+        }
+        .modal-title {
+          margin: 0;
+          font-size: 20px;
+          font-family: $second-font;
+          font-weight: 600;
+          color: $blue1;
+          font-style: normal;
+          line-height: 30px;
+          letter-spacing: 0.8px;
+          @media screen and (max-width: $sm) {
+            font-size: 16px;
+          }
+        }
+        .close-btn {
+          display: inline-block;
+          height: 30px;
+          .close-img {
+            width: 30px;
+          }
+        }
+      }
+      .form-container {
+        display: flex;
+        padding: 0 56px 56px 56px;
+        flex-direction: column;
+        gap: 72px;
+        @media screen and (max-width: $sm) {
+          padding: 0 25px;
+          gap: 30px;
+        }
+        h4 {
+          margin: 0;
+        }
+        .form {
+          display: flex;
+          flex-direction: column;
+          gap: 31px;
+          @media screen and (max-width: $sm) {
+            gap: 12px;
+          }
+          .form__item {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            .form__label {
+              color: $blue1;
+              line-height: 30px;
+              letter-spacing: 0.64px;
+            }
+            input,
+            textarea {
+              padding: 0 40px;
+              @media screen and (max-width: $sm) {
+                padding: 0 20px;
+              }
+            }
+            textarea {
+              overflow-y: hidden;
+              padding: 22px 40px;
+              min-height: 144px;
+              resize: none;
+              line-height: 1.2;
+              @media screen and (max-width: $sm) {
+                padding: 20px 20px;
+              }
+            }
+            .form__input {
+              width: 100%;
+              height: 72px;
+              border: 1px solid rgba(86, 204, 242, 0.4);
+              border-radius: 10px;
+              @media screen and (max-width: $sm) {
+                height: 40px;
+              }
+            }
+            .form__textarea {
+              width: 100%;
+              height: 72px;
+              border: 1px solid rgba(86, 204, 242, 0.4);
+              border-radius: 10px;
+            }
+            ::placeholder {
+              font-family: $second-font;
+              color: $blue1;
+              opacity: 0.3;
+            }
+            .error {
+              color: red;
+            }
+          }
+          .btn-submit {
+            background: $blue4;
+            border-radius: 10px;
+            box-shadow: 5px 20px 50px 0 rgba(16, 112, 177, 0.3);
+            @media screen and (max-width: $sm) {
+              margin-bottom: 30px;
+            }
+            h4 {
+              padding: 22px 0;
+              text-align: center;
+              color: #fff;
+              line-height: 26px;
+              letter-spacing: 0.64px;
+              @media screen and (max-width: $sm) {
+                padding: 10px 0;
+              }
+            }
+          }
+        }
+
+        .popup {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          display: none;
+          padding: 20px;
+          color: $blue1;
+          background-color: #fff;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+.modal-container--open {
+  top: 0;
+}

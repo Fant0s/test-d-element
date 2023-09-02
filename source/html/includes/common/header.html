@@ -1,11 +1,24 @@
 <header class="header">
-  <nav class="nav container">
-    <a href="/" class="nav__link">
-      <span class="nav__title">
-        <img src="/img/logo.svg"
-             class="nav__logo"
-             alt="Логотип Create HTML boilerplate" />
-        Create HTML boilerplate v<%= version %></span>
-    </a>
-  </nav>
+  <div class="navbar">
+    <img class="logo-icon" src="/img/logo.svg" alt="logo" />
+    <button class="menu-btn">
+      <img class="menu-btn__icon" src="/img/menu-btn.svg" alt="menu btn" />
+      <div class="menu-btn__items">
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a class="navigation__link active" href="#">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Home1</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Home2</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Home3</a>
+          </li>
+        </ul>
+      </div>
+    </button>
+  </div>
 </header>

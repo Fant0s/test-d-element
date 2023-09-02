@@ -9,14 +9,13 @@ html {
 }
 
 body {
-  background-color: $white;
-  color: $black;
-  font-family: $main-font;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 20px;
   margin: 0;
   padding: 0;
+  color: $black;
+  background-color: $white;
+}
+.no-scroll {
+  overflow: hidden;
 }
 
 img {
@@ -28,17 +27,66 @@ a {
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 1.25;
+  margin: 37px 0;
+  font-size: 64px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-style: normal;
+  @media screen and (max-width: $sm) {
+    font-size: 40px;
+  }
 }
 
-pre {
-  overflow-x: auto;
+h2 {
+  font-size: 36px;
+  font-family: $second-font;
+  font-weight: 600;
+  font-style: normal;
+  @media screen and (max-width: $sm) {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  font-family: $second-font;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h4 {
   font-size: 16px;
-  width: 100%;
-  padding: 20px;
-  border: 1px solid rgb(204, 89, 6);
-  background-color: #252525;
-  color: rgba(255, 255, 255, 0.7);
-  border-radius: 15px 0 15px 0;
+  font-family: $second-font;
+  font-weight: 400;
+  font-style: normal;
+  @media screen and (max-width: $sm) {
+    font-size: 10px;
+  }
+}
+
+h5 {
+  font-size: 14px;
+  font-family: $second-font;
+  font-weight: 600;
+  font-style: normal;
+  @media screen and (max-width: $sm) {
+    font-size: 12px;
+  }
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+input,
+textarea {
+  font-family: $second-font;
 }

@@ -1,9 +1,85 @@
 .hero {
-  h1 {
-    margin-bottom: 20px;
+  position: relative;
+  height: 640px;
+  background: linear-gradient(
+    0deg,
+    rgba(152, 195, 232, 0.2) 28.39%,
+    rgba(152, 195, 232, 0) 100%
+  );
+  @media screen and (max-width: $sm) {
+    height: auto;
   }
 
-  p {
-    margin-bottom: 20px;
+  .content {
+    width: 100%;
+    height: 100%;
+
+    .info {
+      position: relative;
+      padding: 14px 0 188px 0;
+      z-index: 2;
+      @media screen and (max-width: $sm) {
+        padding: 14px 0 60px 0;
+      }
+      .title {
+        max-width: 530px;
+        color: $blue1;
+        line-height: 74px;
+        letter-spacing: 2.8px;
+        @media screen and (max-width: $sm) {
+          line-height: unset;
+          letter-spacing: 1px;
+          margin-bottom: 0;
+        }
+      }
+
+      .description {
+        margin-top: 40px;
+        max-width: 420px;
+        color: $blue1;
+        line-height: 26px;
+        letter-spacing: 0.7px;
+        @media screen and (max-width: $sm) {
+          line-height: unset;
+          letter-spacing: 0.7px;
+          margin: 10px 0;
+        }
+      }
+
+      .btn-projects {
+        margin-top: 55px;
+        padding: 0 49px;
+        background: $blue4;
+        border-radius: 10px;
+        box-shadow: 5px 10px 20px 0 rgba(53, 110, 173, 0.2);
+        @media screen and (max-width: $sm) {
+          margin-top: 0;
+          padding: 0 5px;
+        }
+      }
+
+      .btn-text {
+        margin: 15px 0;
+        text-align: center;
+        color: $white;
+        line-height: 26px;
+        letter-spacing: 0.64px;
+        @media screen and (max-width: $sm) {
+          line-height: unset;
+          letter-spacing: 0.7px;
+          margin: 7px 0;
+        }
+      }
+    }
+    .background {
+      position: absolute;
+      top: -40px;
+      right: 23px;
+      z-index: 1;
+      @media screen and (max-width: $sm) {
+        right: 0;
+        opacity: 0.4;
+      }
+    }
   }
 }

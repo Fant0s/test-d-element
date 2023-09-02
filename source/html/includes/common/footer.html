@@ -1,3 +1,138 @@
-<footer class="container">
-  &copy; <%= new Date().getFullYear() %> HTML Boilerplate
+<footer class="footer">
+  <div class="work-with-us">
+    <div class="work-with-us-content">
+      <div class="content-information">
+        <h2 class="title">Interested to work with our team?</h2>
+        <h4 class="description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </h4>
+      </div>
+      <button class="btn-talk">
+        <h4 class="btn-text">Let’s Talk</h4>
+      </button>
+      <div class="modal-container">
+        <div class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <p class="modal-title">SEND US MESSAGE</p>
+              <button class="close-btn">
+                <img class="close-img" src="img/close-btn.svg" alt="Close" />
+              </button>
+            </div>
+            <div class="form-container">
+              <form class="form" action="https://com.com">
+                <div class="form__item">
+                  <label class="form__label" for="full-name">
+                    <h4>Full Name</h4>
+                  </label>
+                  <input
+                    class="form__input"
+                    name="full-name"
+                    id="full-name"
+                    placeholder="Your Name"
+                  />
+                  <span class="error" id="nameError"></span>
+                </div>
+                <div class="form__item">
+                  <label class="form__label" for="email"><h4>Email</h4></label>
+                  <input
+                    class="form__input"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email"
+                  />
+                  <span class="error" id="emailError"></span>
+                </div>
+                <div class="form__item">
+                  <label class="form__label" for="message">
+                    <h4>Message</h4>
+                  </label>
+                  <textarea
+                    class="form__textarea"
+                    name="message"
+                    id="message"
+                    maxlength="408"
+                    placeholder="Your Message"
+                  >
+                  </textarea>
+                  <span class="error" id="messageError"></span>
+                </div>
+                <button class="btn-submit" type="submit">
+                  <h4>SUBMIT</h4>
+                </button>
+              </form>
+              <div class="popup" id="successPopup">
+                <h3>Your message successfully sent</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <hr class="line" />
+    <div class="bottom-content">
+      <div class="contacts">
+        <div class="logo-container">
+          <img src="img/logo--white.svg" alt="logo" />
+          <p class="logo-title">Afrianska</p>
+        </div>
+        <div class="contact-info">
+          <div class="address">
+            <h4 class="tag">A.</h4>
+            <h4 class="information">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </h4>
+          </div>
+          <div class="telephone">
+            <h4 class="tag">T.</h4>
+            <h4 class="information">+62-812-7313-4321</h4>
+          </div>
+          <div class="email">
+            <h4 class="tag">E</h4>
+            <h4 class="information">hello.afrian@gmail.com</h4>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <h2 class="title">About US</h2>
+        <ul class="list">
+          <li class="item">
+            <a class="link" href="#">About</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">What We Do</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">Project</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">How It Works With Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="follow">
+        <h2 class="title">Follow US</h2>
+        <ul class="list">
+          <li class="item">
+            <a class="link" href="#">Instagram</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">Facebook</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">LinkedIn</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <h4 class="rights"></h4>
+  </div>
 </footer>

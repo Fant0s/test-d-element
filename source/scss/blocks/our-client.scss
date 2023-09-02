@@ -1,0 +1,101 @@
+.our-client {
+  min-height: 680px;
+  background-color: $blue4;
+  border-radius: 200px 0 0 0;
+  .our-client-container {
+    display: flex;
+    padding: 61px 0;
+    height: 100%;
+    flex-direction: column;
+    gap: 86px;
+    @media screen and (max-width: $sm) {
+      padding: 40px 0;
+      gap: 30px;
+    }
+    .our-client-content {
+      display: flex;
+      flex-direction: row;
+      gap: 94px;
+      @media screen and (max-width: $sm) {
+        flex-direction: column;
+        gap: 18px;
+        align-items: end;
+        text-align: end;
+      }
+      .title {
+        max-width: 227px;
+        color: $white;
+        line-height: 46px;
+        letter-spacing: 1.7px;
+        @media screen and (max-width: $sm) {
+          line-height: 30px;
+          letter-spacing: 0.7px;
+          margin: 0;
+        }
+      }
+      .info {
+        margin: 35px 0;
+        max-width: 550px;
+        font-size: 15px;
+        color: $white;
+        opacity: 0.6;
+        line-height: 26px;
+        letter-spacing: 1.12px;
+        @media screen and (max-width: $sm) {
+          line-height: 20px;
+          letter-spacing: 0.5px;
+          margin: 0;
+        }
+      }
+    }
+    .client-container {
+      display: flex;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: $sm) {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+      .client-logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 235px;
+        height: 128px;
+        font-size: 20px;
+        font-family: $second-font;
+        font-weight: 400;
+        color: $white;
+        font-style: normal;
+        line-height: 46px;
+        letter-spacing: 0.4px;
+      }
+      .btn-clients {
+        background-color: rgba(31, 63, 104, 0.2);
+        &:hover {
+          background-color: rgba(31, 63, 104, 0.4);
+          transition: all 0.2s ease-in-out;
+        }
+        @media screen and (max-width: $sm) {
+          width: 100%;
+        }
+      }
+      .client-logo-container:nth-child(-n + 4) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      }
+      @media screen and (max-width: $sm) {
+        .client-logo-container:nth-child(-n + 7) {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        }
+      }
+      .client-logo-container:nth-child(-n + 3),
+      .client-logo-container:nth-child(n + 5):nth-child(-n + 7) {
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
+        @media screen and (max-width: $sm) {
+          border-right: unset;
+        }
+      }
+    }
+  }
+}
